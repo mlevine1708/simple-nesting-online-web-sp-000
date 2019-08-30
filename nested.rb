@@ -37,15 +37,11 @@ def alan_kay_is_known_for
           :languages => ["C"]
         }
      }
-		 programmer_hash.each do |person, data|
-       data.each do |attribute, value|
-         if attribute == :known_for
-           puts "#{:known_for}"
-         end
-       end
-     end
+		 programmer_hash[:alan_kay][:known_for]
+
 end
 
+alan_kay_is_known_for
 
 def dennis_ritchies_language
 	programmer_hash =
